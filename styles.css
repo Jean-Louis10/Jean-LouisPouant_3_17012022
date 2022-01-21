@@ -53,8 +53,8 @@ main .city i {
     padding-top: 40px;
 }
 
-section {
-    padding-bottom: 40px;
+.heightBack {
+    height: 315px;
 }
 
 .explorer p {
@@ -76,13 +76,77 @@ margin: 15px 0;
 
 .explorer button:hover {
     opacity: 0.9;
-    box-shadow: 5px 8px 12px 0px grey;
+    box-shadow: 5px 8px 12px 0px lightgrey;
     transform: scale(1.01);
 }
 
 .backGrey {
     background-color: #f6f6f6;
 }
+
+
+/*NAV*/
+
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    padding-right: 40px;
+}
+
+@media (max-width :880px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+nav li {
+    background-color: #f6f6f6;
+    padding: 25px 20px;
+    flex-grow: 1;
+    border-radius: 15px;
+    box-shadow: 3px 5px 12px 0px lightgrey;
+    padding-left: 30px;
+    position: relative;
+}
+
+nav li:hover {
+    opacity: 0.9;
+    box-shadow: 5px 8px 12px 0px lightgrey;
+    transform: scale(1.01); 
+}
+
+nav i {
+    margin-right: 20px;
+    color: grey;
+}
+
+nav {
+    padding-top: 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul span {
+    color: white;
+    background-color: #9356DC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: -12px;
+}
+
+
+
+
+
 
 
 /*FLEX*/
