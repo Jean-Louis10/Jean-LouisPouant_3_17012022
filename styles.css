@@ -7,6 +7,11 @@
 /*HEADER*/
 
 header {
+    padding: 1px;
+    position: relative;
+}
+
+.boxShadow {
     box-shadow: 0 2px 5px 1px #cfcfcf;
     padding: 1px;
     position: relative;
@@ -19,15 +24,17 @@ h1 {
     margin: 10px;
 }
 
-h2 {
+.titresAccueil {
     font-weight: 900;
     margin: 0 30px;
-    padding: 30px 0;
+    padding-top: 50px;
+    padding-bottom: 15px;
 }
 
 h4 {
     font-family: 'Shrikhand', cursive;
     font-weight: 400;
+    margin: 0;
 }
 
 body {
@@ -46,6 +53,10 @@ main .city {
 
 main .city i {
     font-size: large;
+}
+
+.Bold {
+    font-weight: bold;
 }
 
 /*EXPLORER*/
@@ -88,6 +99,10 @@ margin: 15px 0;
     background-color: #f6f6f6;
 }
 
+.paddingBottomAccueil {
+    padding-bottom: 45px;
+}
+
 
 /*NAV*/
 
@@ -125,12 +140,9 @@ nav i {
     color: grey;
 }
 
-nav {
-    padding-top: 30px;
-}
-
 ul {
     list-style-type: none;
+    margin-bottom: 55px;
 }
 
 ul span {
@@ -187,16 +199,22 @@ figure {
 
 
 section h3 {
-    margin-top: 10px;
+    margin-top: 13px;
     margin-bottom: 0;
 }
 
 section p {
-    margin-top: 7px;
+    margin-top: 10px;
 }
 
 figcaption {
     margin: 0 25px 0 15px ;
+}
+
+figure:hover {
+    opacity: 0.9;
+    box-shadow: 5px 8px 12px 0px lightgrey;
+    transform: scale(1.01); 
 }
 
 
@@ -205,6 +223,10 @@ figcaption {
         grid-template-columns: repeat(1, 1fr);
     }
     
+}
+
+.paddingBottomSection {
+    padding-bottom: 60px;
 }
 
 
@@ -216,7 +238,6 @@ footer {
     position: relative;
     height: 155px;
     padding-left: 30px;
-    margin-top: 20px;
 }
 
 footer ul {
@@ -225,15 +246,97 @@ footer ul {
 
 footer h4 {
     padding-top: 17px;
-    margin: 10px 0;
 }
 
 footer i {
     gap: 20px;
 }
 
+  /*MENUS*/
 
-/*FLEX*/
+  .menuTitle {
+    font-family: 'Shrikhand', cursive;
+    font-size: xx-large;
+  }
+
+  .paddingTitle {
+    padding-right: 25px;
+    padding-left: 10px;
+  }
+
+  .MenuPadding {
+    padding: 5px 15px;
+  }
+
+  .commander {
+      text-align: center;
+  }
+
+  .commander button {
+    background-image: linear-gradient(175deg, #FF79DA, #9356DC );
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 3px 5px 12px 0px grey;
+    margin: 50px 0;
+    }
+
+    .commander button:hover {
+        opacity: 0.9;
+        box-shadow: 5px 8px 12px 0px lightgrey;
+        transform: scale(1.01);
+    }
+
+    .imageRestaurant {
+        display: block;
+        height: 50vh;
+        width: 100%;
+        object-fit: cover;
+        object-position: 50% 64%;
+    }
+    
+    .borderBanner {
+        border-radius: 40px 40px 0 0;
+        padding-top: 10px;
+        margin-top: -43px;
+        position: relative;
+    }
+
+    @media (min-width : 1245px) {
+    .menuGrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+    }
+    }
+
+    .linkAdjustment {
+        position: absolute;
+        top: 39%;
+        left: 25px;
+    }
+
+    .borderColor {
+        border-bottom: 4px solid #99E2D0;
+        width: 74px;
+        padding-bottom: 6px;
+    }
+
+    .carte1 {
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: lightgrey 0px 11px 16px -1px;
+    }
+
+    .PaddingCarte {
+        padding: 2px 25px 2px 15px;
+        margin: 15px 0;
+    }
+
+    /*FLEX*/
 
 .flex {
     display: flex;
@@ -270,28 +373,4 @@ footer i {
   .flexWrap {
     flex-wrap: wrap;
   }
-
-  /*MENUS*/
-
-  .commander {
-      text-align: center;
-  }
-
-  .commander button {
-    background-image: linear-gradient(175deg, #FF79DA, #9356DC );
-    color: white;
-    font-weight: 400;
-    font-size: 20px;
-    padding: 15px 50px;
-    border: none;
-    border-radius: 25px;
-    box-shadow: 3px 5px 12px 0px grey;
-    margin: 15px 0;
-    }
-
-    .commander button:hover {
-        opacity: 0.9;
-        box-shadow: 5px 8px 12px 0px lightgrey;
-        transform: scale(1.01);
-    }
     
