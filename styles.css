@@ -256,7 +256,14 @@ footer i {
 
   .menuTitle {
     font-family: 'Shrikhand', cursive;
-    font-size: xx-large;
+    font-size: x-large;
+  }
+
+  @media (min-width : 1245px) {
+    .menuTitle {
+        font-family: 'Shrikhand', cursive;
+        font-size: xx-large;
+      } 
   }
 
   .paddingTitle {
@@ -321,8 +328,9 @@ footer i {
 
     .borderColor {
         border-bottom: 4px solid #99E2D0;
-        width: 74px;
+        width: 60px;
         padding-bottom: 6px;
+        margin-left: 10px;
     }
 
     .carte1 {
@@ -334,6 +342,10 @@ footer i {
     .PaddingCarte {
         padding: 2px 25px 2px 15px;
         margin: 15px 0;
+    }
+
+    .PaddingBottomCategorie {
+        padding-bottom: 10px;
     }
 
     /*FLEX*/
