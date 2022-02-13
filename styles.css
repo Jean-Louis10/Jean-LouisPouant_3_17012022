@@ -51,6 +51,9 @@ body {
     background-color : transparent ; 
     padding : 30px;
     height : 20px;
+    font-size: medium;
+    font-weight: bold;
+    color: #353535;
 }
 
 .mapList {
@@ -69,6 +72,8 @@ body {
     flex-direction: column;
     padding: 0;
     align-items: center;
+    color: #353535;
+    padding-left: 22px;
 }
 
 main div ul li {
@@ -78,13 +83,7 @@ main div ul li {
 li .fa-map-marker-alt {
     position: absolute;
     right: 50%;
-    transform: translateX(-63px);
-}
-
-button p {
-    font-size: 15px;
-    color: dimgrey;
-    font-weight: bold;
+    transform: translateX(-70px);
 }
 
 main .city {
